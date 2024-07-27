@@ -11,6 +11,8 @@ Key features:
 - Custom text input or pre-defined example sentences
 - Interactive web interface built with Streamlit
 
+A free demo is here: https://fakeforeigner-jiayangguizi.streamlit.app/
+
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
