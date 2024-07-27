@@ -1,0 +1,54 @@
+{
+  "openai_api_key": "your_openai_api_key",
+  "supported_languages": [
+    "English",
+    "Chinese",
+    "Spanish",
+    "French",
+    "German",
+    "Japanese",
+    "Korean"
+  ],
+  "example_sentences": {
+    "English": [
+      "In the quiet of the early morning, as the sun began to peek over the horizon, Sarah realized that the journey of a thousand miles truly does begin with a single step.",
+      "Despite facing numerous setbacks and challenges, John persevered with unwavering determination, proving that where there's a will, there's indeed a way to achieve one's dreams.",
+      "The old adage 'knowledge is power' rang true as Emily discovered that her years of diligent study had opened doors she never thought possible in her career."
+    ],
+    "Chinese": [
+      "在繁忙的城市生活中，小李慢慢意识到健康的重要性，他开始每天抽出时间锻炼身体，享受生活的平衡，正如古语所说：'身体是革命的本钱'。",
+      "王老师经常告诉学生们：'学如逆水行舟，不进则退'。多年后，她的学生们在事业有成时，常常感激她的这句教诲，让他们在困难时坚持不懈。",
+      "经历了多次失败后，张明终于成功创业，他深深体会到：'失败是成功之母'这句话的深刻含义，每次挫折都是宝贵的学习经验。"
+    ],
+    "Spanish": [
+      "Después de años de esfuerzo y dedicación, María finalmente alcanzó su sueño de convertirse en médica, demostrando que el dicho 'querer es poder' no es solo una frase, sino una realidad cuando se trabaja con pasión.",
+      "En medio de la crisis económica, la pequeña comunidad se unió para apoyarse mutuamente, recordándonos que 'la unión hace la fuerza' y que juntos podemos superar incluso los desafíos más grandes.",
+      "A pesar de los obstáculos iniciales, Juan persistió en su proyecto de reforestación, inspirado por el refrán 'a grandes males, grandes remedios', y logró transformar una zona árida en un exuberante bosque."
+    ],
+    "French": [
+      "Après des années de travail acharné, Sophie a réalisé son rêve de devenir chef dans un restaurant étoilé, prouvant que 'petit à petit, l'oiseau fait son nid' n'est pas qu'un simple dicton, mais une vérité quand on poursuit ses passions avec détermination.",
+      "Face aux défis du changement climatique, la petite ville a adopté des mesures écologiques innovantes, démontrant que 'à quelque chose malheur est bon' et que les crises peuvent effectivement stimuler la créativité et le progrès.",
+      "Malgré les critiques initiales, Pierre a persévéré dans son projet artistique non conventionnel, se souvenant que 'les goûts et les couleurs ne se discutent pas', et a fini par gagner la reconnaissance de ses pairs dans le monde de l'art."
+    ],
+    "German": [
+      "Nach jahrelanger harter Arbeit verwirklichte Lisa endlich ihren Traum, ein eigenes Café zu eröffnen, und bewies damit, dass 'Übung macht den Meister' nicht nur ein Sprichwort ist, sondern eine Realität, wenn man seine Ziele mit Ausdauer verfolgt.",
+      "Inmitten der wirtschaftlichen Herausforderungen fand das kleine Unternehmen innovative Wege, um zu überleben und zu wachsen, und erinnerte uns daran, dass 'Not macht erfinderisch' und Schwierigkeiten oft zu kreativen Lösungen führen.",
+      "Obwohl anfangs von Zweifeln geplagt, setzte Thomas sein Umweltschutzprojekt fort und erinnerte sich daran, dass 'steter Tropfen den Stein höhlt'. Seine Beharrlichkeit führte schließlich zu einer bedeutenden Verbesserung der lokalen Ökosysteme."
+    ],
+    "Japanese": [
+      "長年の努力の末、田中さんは夢だった自分の会社を設立し、「継続は力なり」という言葉が単なる諺ではなく、情熱を持って取り組めば現実になることを証明しました。",
+      "経済危機の中、小さな町のコミュニティは互いに支え合い、「一致団結」の精神を示し、最大の困難さえも乗り越えられることを私たちに思い出させてくれました。",
+      "最初は批判的な声もありましたが、山田さんは革新的な教育方法の実践を続け、「石の上にも三年」という諺を胸に刻み、最終的に教育界で高い評価を得ることができました。"
+    ],
+    "Korean": [
+      "수년간의 노력 끝에 민지는 마침내 꿈꾸던 자신의 베이커리를 열었고, '천리 길도 한 걸음부터'라는 속담이 단순한 말이 아니라 열정을 가지고 추구하면 현실이 될 수 있다는 것을 증명했습니다.",
+      "경제적 어려움 속에서 작은 회사는 혁신적인 방법을 찾아 생존하고 성장했으며, '위기는 기회다'라는 말처럼 어려움이 종종 창의적인 해결책으로 이어질 수 있음을 상기시켰습니다.",
+      "처음에는 의심의 목소리도 있었지만, 준호는 환경 보호 프로젝트를 계속 진행했고 '바늘 도둑이 소 도둑 된다'는 속담을 기억하며, 그의 끈기는 결국 지역 생태계의 큰 개선으로 이어졌습니다."
+    ],
+    "Arabic": [
+      "بعد سنوات من العمل الجاد، حققت فاطمة أخيرًا حلمها في افتتاح مكتبة خاصة بها، مثبتة أن 'من جد وجد' ليست مجرد مقولة، بل حقيقة عندما نتابع أهدافنا بإصرار.",
+      "في خضم التحديات الاقتصادية، وجدت الشركة الصغيرة طرقًا مبتكرة للبقاء والنمو، مذكرة إيانا بأن 'الحاجة أم الاختراع' وأن الصعوبات غالبًا ما تؤدي إلى حلول إبداعية.",
+      "رغم الشكوك الأولية، واصل أحمد مشروعه البيئي، متذكرًا أن 'القطرة تنقب الصخرة'، وأدى إصراره في النهاية إلى تحسين كبير في النظم البيئية المحلية."
+    ]
+  }
+}
