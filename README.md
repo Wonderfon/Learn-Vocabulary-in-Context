@@ -1,5 +1,7 @@
 # Learn-Vocabulary-in-Context
 This small web app uses GPT-4o-mini to convert whatever you input into a mixed-language content and marks those words worth learning.
+A free demo is here: https://fakeforeigner-jiayangguizi.streamlit.app/
+
 
 ## Overview
 
@@ -11,7 +13,10 @@ Key features:
 - Custom text input or pre-defined example sentences
 - Interactive web interface built with Streamlit
 
-A free demo is here: https://fakeforeigner-jiayangguizi.streamlit.app/
+The original motivation for this project is to develop a tool for creating datasets to improve the Whisper's ability to transcribe mixed-language speeches through fine-tuning.
+Based on fine-tuned Whisper, We are also working on a meeting assisant product. It is still an on-going project.
+
+Welcome to star and discuss!
 
 ## Prerequisites
 
