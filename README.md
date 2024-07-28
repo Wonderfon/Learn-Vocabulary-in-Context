@@ -5,7 +5,7 @@ A free demo is here: https://fakeforeigner-jiayangguizi.streamlit.app/
 
 ## Overview
 
-The Learn-Vocabulary-in-Context App is an interactive tool designed to help language learners practice and improve their skills. It uses AI-powered translation and language mixing to create custom learning content across multiple languages.
+The Learn-Vocabulary-in-Context App is an interactive tool designed to help language learners practice and improve their skills. It uses AI-powered translation and language mixing to create custom learning content across multiple languages. Welcome to use, star, and discuss!
 
 Key features:
 - Support for multiple languages including English, Chinese, Spanish, French, German, Japanese, Korean
@@ -16,7 +16,6 @@ Key features:
 The original motivation for this project is to develop a tool for creating datasets to improve the Whisper's ability to transcribe mixed-language speeches through fine-tuning.
 Based on fine-tuned Whisper, We are also working on a meeting assisant product. It is still an on-going project.
 
-Welcome to star and discuss!
 
 ## Prerequisites
 
