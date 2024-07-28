@@ -2,13 +2,18 @@
 
 This small web app uses GPT-4o-mini to convert whatever you input into a mixed-language content and marks those words worth learning.
 A free demo is here: https://fakeforeigner-jiayangguizi.streamlit.app/
-<img src="https://github.com/user-attachments/assets/3a653c3e-797b-4fed-ab03-5215d692f767" alt="Example Image" style="width: 50%; height: auto;">
+
 <div style="text-align: center;">
-  <img src="https://github.com/user-attachments/assets/3a653c3e-797b-4fed-ab03-5215d692f767" alt="Example Image" width="300">
+  <img src="https://github.com/user-attachments/assets/3a653c3e-797b-4fed-ab03-5215d692f767" alt="CN-EN" width="600">
 </div>
-![image](https://github.com/user-attachments/assets/3a653c3e-797b-4fed-ab03-5215d692f767)
-![image](https://github.com/user-attachments/assets/4d5bcb1e-85bc-4669-9ded-cc19a9798857)
-![image](https://github.com/user-attachments/assets/35905edd-63e3-4f8e-9b32-43021e24befa)
+
+<div style="text-align: center;">
+  <img src="https://github.com/user-attachments/assets/4d5bcb1e-85bc-4669-9ded-cc19a9798857" alt="2" width="600">
+</div>
+
+<div style="text-align: center;">
+  <img src="https://github.com/user-attachments/assets/35905edd-63e3-4f8e-9b32-43021e24befa" alt="3" width="600">
+</div>
 
 
 ## Overview
