@@ -5,7 +5,7 @@ A free demo is here: https://fakeforeigner-jiayangguizi.streamlit.app/
 <br><br>
 - ### Chinese - English
 <div style="text-align: center;">
-  <kbd> <img src="https://github.com/user-attachments/assets/3a653c3e-797b-4fed-ab03-5215d692f767" alt="CN-EN" width=600 style="border: 1px solid black;"> <kbd>
+  <kbd> <img src="https://github.com/user-attachments/assets/4a959f41-793e-48ae-bbf4-5227e9185212" alt="CN-EN" width=600 style="border: 1px solid black;"> <kbd>
 </div>
 
 - ### English - Spanish
