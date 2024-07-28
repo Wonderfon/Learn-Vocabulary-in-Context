@@ -10,12 +10,12 @@ A free demo is here: https://fakeforeigner-jiayangguizi.streamlit.app/
 
 - ### English - Spanish
 <div style="text-align: center;">
-  <img src="https://github.com/user-attachments/assets/4d5bcb1e-85bc-4669-9ded-cc19a9798857" alt="2" width=600 style="border: 1px solid black;">
+  <kbd> <img src="https://github.com/user-attachments/assets/4d5bcb1e-85bc-4669-9ded-cc19a9798857" alt="2" width=600 style="border: 1px solid black;"> <kbd>
 </div>
 
 - ### Japanese - French
 <div style="text-align: center;">
-  <img src="https://github.com/user-attachments/assets/35905edd-63e3-4f8e-9b32-43021e24befa" alt="3" width=600 style="border: 1px solid black;">
+  <kbd> <img src="https://github.com/user-attachments/assets/35905edd-63e3-4f8e-9b32-43021e24befa" alt="3" width=600 style="border: 1px solid black;"> <kbd>
 </div>
 
 
