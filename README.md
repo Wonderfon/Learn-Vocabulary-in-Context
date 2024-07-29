@@ -68,7 +68,7 @@ Before you begin, ensure you have met the following requirements:
 
 ## Configuration
 
-You can customize the supported languages and example sentences by editing the `config.json` file.
+Fill your openai api key in the `config.json` file. You can also customize the supported languages and example sentences by editing the `config.json` file.
 
 
 ## License
