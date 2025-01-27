@@ -4,26 +4,34 @@ import openai
 import re
 import json
 from PIL import Image
-# import tomli
+from dotenv import load_dotenv
+import os
+
+# Load environment variables
+load_dotenv()
 
 # Load configuration
 with open('config.json', 'r', encoding='utf-8') as config_file:
     config = json.load(config_file)
 
-# Set up your OpenAI API key
-openai.api_key = config['openai_api_key']
+# Get API key from environment variable
+API_KEY = os.getenv('OPEN_ROUTER_KEY')
+if not API_KEY:
+    raise ValueError("OPEN_ROUTER_KEY environment variable is not set")
 
-# # Load configuration
-# with open('.streamlit/config.toml', 'rb') as config_file:
-#     config = tomli.load(config_file)
-
-# # Set up your OpenAI API key
-# openai.api_key = config['openai_api_key']
-# # print(openai.api_key)
+# Set up OpenAI client for OpenRouter
+client = openai.OpenAI(
+  base_url="https://openrouter.ai/api/v1",
+  api_key=API_KEY,
+)
+# Set default headers for OpenRouter
+openai.default_headers = {
+    "HTTP-Referer": "http://localhost:8501",  # Streamlit default port
+}
 
 def detect_language(text):
-    response = openai.chat.completions.create(
-        model="gpt-4o-mini",
+    response = client.chat.completions.create(
+        model="openai/gpt-4o-mini",
         messages=[
             {"role": "system", "content": "You are a language detection tool. Respond with only the language name."},
             {"role": "user", "content": f"Detect the language of this text: '{text}'. Respond with only the language name from this list: {', '.join(config['supported_languages'])}"}
@@ -34,8 +42,8 @@ def detect_language(text):
     return response.choices[0].message.content.strip()
     
 def translate_text(text, target_language):
-    response = openai.chat.completions.create(
-        model="gpt-4o-mini",
+    response = client.chat.completions.create(
+        model="openai/gpt-4o-mini",
         messages=[
             {"role": "system", "content": f"You are a translator. Translate the following text to {target_language}."},
             {"role": "user", "content": text}
@@ -45,7 +53,7 @@ def translate_text(text, target_language):
     )
     return response.choices[0].message.content.strip()
 
-def convert_to_mixed_language(input_text, primary_language, target_language, model='gpt-4o-mini'):
+def convert_to_mixed_language(input_text, primary_language, target_language):
     system_prompt = f"""You are a language learning assistant. Convert the input text from {primary_language} into a mixed-language content where important vocabulary or phrases are in the {target_language} language, surrounded by curly braces {{}}.
 
 Rules:
@@ -67,8 +75,8 @@ An incorrect output would be:
 Remember: Always translate the content inside the curly braces to the target language.
 """
 
-    response = openai.chat.completions.create(
-        model=model,
+    response = client.chat.completions.create(
+        model="openai/gpt-4o-mini",
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": input_text}
@@ -114,7 +122,6 @@ def main():
             if detected_lang != primary_language:
                 input_text = translate_text(input_text, primary_language)
                 st.info(f"Input text has been translated to {primary_language}:")
-                # st.write(input_text)
 
             mixed_output = convert_to_mixed_language(input_text, primary_language, target_language)
             mixed_output = post_process_output(mixed_output, primary_language, target_language)
@@ -126,7 +133,6 @@ def main():
             st.warning("Please enter some text or select an example sentence.")
 
     # Add a footer with the Venmo QR code
-    #st.markdown("<br/>")
     st.markdown("---")
     st.markdown("""
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -168,10 +174,7 @@ def main():
         st.markdown("###### Buy me an A100  -->_-->")
 
     with col3:
-      
-        # st.markdown("####  Support My Work")
         st.image("venmo.png", width=150)
-
 
 # run
 if __name__ == "__main__":

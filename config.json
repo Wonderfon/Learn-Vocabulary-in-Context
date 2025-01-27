@@ -1,5 +1,4 @@
 {
-  "openai_api_key": "your_openai_api_key",
   "supported_languages": [
     "English",
     "Chinese",
@@ -7,7 +6,8 @@
     "French",
     "German",
     "Japanese",
-    "Korean"
+    "Korean",
+    "Arabic"
   ],
   "example_sentences": {
     "English": [
