@@ -15,7 +15,8 @@ with open('config.json', 'r', encoding='utf-8') as config_file:
     config = json.load(config_file)
 
 # Get API key from environment variable
-API_KEY = os.getenv('OPEN_ROUTER_KEY')
+# API_KEY = os.getenv('OPEN_ROUTER_KEY')
+API_KEY = st.secrets["OPEN_ROUTER_KEY"]
 if not API_KEY:
     raise ValueError("OPEN_ROUTER_KEY environment variable is not set")
 
