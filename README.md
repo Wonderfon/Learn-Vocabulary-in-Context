@@ -1,7 +1,7 @@
 # Learn-Vocabulary-in-Context
 
 This small web app uses GPT-4o-mini to convert whatever you input into a mixed-language content and marks those words worth learning.
-A free demo is here: https://fakeforeigner-jiayangguizi.streamlit.app/
+A free demo is here: [https://fakeforeigner-jiayangguizi.streamlit.app/](https://learn-vocabulary-in-context-he82vfwkvpgkkkerbhxe2j.streamlit.app/)
 <br><br>
 - ### Chinese - English
 <div style="text-align: center;">
